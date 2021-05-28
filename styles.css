@@ -47,7 +47,7 @@ main {
   margin-left: auto;
   margin-right: auto;
   border-radius: 5%;
-  border: black dashed 4px;
+  /* border: black dashed 4px; */
   margin-bottom: 3%;
 }
 
@@ -59,4 +59,5 @@ main {
 
 .adoption-details {
   width: 100%;
+  margin-left: 10%;
 }
