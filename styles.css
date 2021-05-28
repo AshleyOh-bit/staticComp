@@ -1,3 +1,47 @@
 * {
   border: blue solid 1px
 }
+
+html {
+  height: 100%;
+  width: 100%;
+  background-color: lightcyan;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(8, 3fr)
+}
+
+.logo {
+  height: 200px;
+  width: 200px;
+}
+
+.adoption-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  background-color: white;
+}
+
+.rat-photo {
+  height: 100%;
+  width: 80%;
+}
