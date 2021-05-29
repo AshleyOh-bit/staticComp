@@ -68,7 +68,7 @@ html, body, header, body, main, .overlay {
 header {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   /* background-color: #191970; */
   background-color: #c1e9ee;
   flex-wrap: wrap;
@@ -78,6 +78,7 @@ header {
 
 nav {
   margin-bottom: 1em;
+  /* margin-left: 5em; */
 }
 
 body {
@@ -112,14 +113,27 @@ h4 {
 }
 
 .logo {
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
   /* border-radius: 5%; */
 }
 
 .sub-title {
   font-size: 2.5em;
+  margin: .25em;
 }
+
+.sub-sub-title {
+  font-size: 1.5em;
+  font-style: italic;
+  margin-left: .5em;
+}
+
+.hamburger {
+  /* height: 15%; */
+  /* width: 9%;
+  margin-right: 1em;
+} */
 
 .adoption-card {
   display: flex;
