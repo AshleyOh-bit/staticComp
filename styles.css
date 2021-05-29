@@ -162,14 +162,38 @@ h4 {
   /* z-index: 2; */
 }
 
+.image-info {
+  display: flex;
+  flex-direction: row-reverse;
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  justify-content: space-between;
+}
+
 .icon {
   /* background-color: white; */
-  position: absolute;
+  /* position: absolute; */
   /* border-radius: 50%; */
   height: 4em;
-  width: 4em;;
+  width: 4em;
   margin: 1em;
   /* z-index: 2; */
+}
+
+.views {
+  /* position: absolute; */
+  color: #e0505f;
+  height: 4em;
+  /* width: 4em; */
+  margin-right: .75em;
+  margin-top: .75em;
+  font-size: 1.75em;
+  text-transform: uppercase;
+}
+
+.view-num {
+  font-size: 2em;
 }
 
 .rat-photo {
