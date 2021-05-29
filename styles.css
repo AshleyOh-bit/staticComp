@@ -139,12 +139,23 @@ h4 {
   border: #191970 solid -2px;
 }
 
-.icon {
-  background-color: white;
-  border-radius: 30%;
+.icon, .rat-icon {
+  /* background-color: white; */
+  /* position: absolute; */
+  /* border-radius: 30%; */
   height: 15%;
   width: 15%;
-  z-index: 2;
+  /* z-index: 2; */
+}
+
+.icon {
+  /* background-color: white; */
+  position: absolute;
+  /* border-radius: 50%; */
+  height: 15%;
+  width: 15%;
+  margin: 1em;
+  /* z-index: 2; */
 }
 
 .rat-photo {
@@ -177,7 +188,7 @@ h4 {
   /* display: none; */
   /* width: 100%;
   height: 100%; */
-  color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
   z-index: 2;
 }
 
