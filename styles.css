@@ -152,8 +152,8 @@ h4 {
   /* background-color: white; */
   position: absolute;
   /* border-radius: 50%; */
-  height: 15%;
-  width: 15%;
+  height: 4em;
+  width: 4em;;
   margin: 1em;
   /* z-index: 2; */
 }
@@ -162,6 +162,7 @@ h4 {
   border-top-right-radius: 5%;
   border-top-left-radius: 5%;
   width: 100%;
+  /* z-index: -1; */
 }
 
 .adoption-details {
