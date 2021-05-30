@@ -61,18 +61,18 @@ html {
   /* background-image: url(./assets/galactic-bg3.jpeg) */
 }
 
-html, body, header, body, main, .overlay {
+html, body, header, body, main, .container {
   height: 100%;
   width: 100%;
 }
 
 header {
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+  align-items: flex-end;
+  justify-content: space-around;
   /* background-color: #191970; */
   background-color: #c1e9ee;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   height: max-content;
   padding: 1em;
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
@@ -85,7 +85,7 @@ nav {
   /* margin-left: 5em; */
   height: 100%;
   display: flex;
-  align-items: center;
+  /* align-items: baseline; */
   justify-content: space-around;
   width: 50%;
 }
@@ -101,6 +101,7 @@ nav {
 .adoption-section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-template-rows: repeat(3, 1fr);
   grid-gap: 20px;
   padding: 3%;
 }
@@ -108,19 +109,21 @@ nav {
 button {
   height: 75px;
   width: 25%;
-  border: 4px solid #e0505f;
+  /* border: 4px solid #e0505f; */
+	border: 0;
+	border-bottom: 6px;
   border-radius: 5%;
   font-size: 25px;
-  background-color: white;
+  background-color: #c1e9ee;
 }
 
 
 h1 {
-  font-size: 2.5em;
+  font-size: 3em;
 }
 
 h2 {
-  font-size: 2.25em;
+  font-size: 2.75em;
   margin: 1em;
 }
 
@@ -135,13 +138,12 @@ h4 {
 
 .logo {
   /* height: 150px; */
-  width: 15%;
+  width: 12%;
   /* border-radius: 5%; */
 }
 
-.calendar {
-  /* height: 15%; */
-  width: 12%;
+.titles {
+	margin: 1.25em;
 }
 
 .sub-title {
@@ -150,7 +152,7 @@ h4 {
 }
 
 .sub-sub-title {
-  font-size: 1.5em;
+  font-size: 2em;
   font-style: italic;
   margin-left: .5em;
 }
@@ -160,6 +162,7 @@ h4 {
   display: none;
   width: 9%;
   margin-right: 1em;
+	border-radius: 50%;
 }
 
 .adoption-card {
@@ -178,6 +181,9 @@ h4 {
   /* box-shadow: 5px 5px 5px 5px #191970; */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border: #191970 solid -2px;
+	/* transition shit below */
+	will-change: transform;
+	transition: transform 450ms;
 }
 
 .icon, .rat-icon {
@@ -194,15 +200,19 @@ h4 {
   flex-direction: row-reverse;
   position: absolute;
   width: 100%;
-  height: 20%;
+  height: 100%;
   justify-content: space-between;
+	/* overlay */
+	background: rgba(0, 0, 0, 0.5);
+	border-top-right-radius: 5%;
+  border-top-left-radius: 5%;
 }
 
 .icon {
   /* background-color: white; */
   /* position: absolute; */
   /* border-radius: 50%; */
-  height: 75%;
+  height: 15%;
   width: 20%;
   margin: 1em;
   /* z-index: 2; */
@@ -226,10 +236,6 @@ h4 {
   font-size: 1.75em;
   text-transform: uppercase;
 }
-/*
-.views > p {
-  font-size: 80%;
-} */
 
 .view-num > p {
   font-size: 100%;
@@ -240,7 +246,7 @@ h4 {
   border-top-left-radius: 5%;
   width: 100%;
   height: 100%;
-  /* z-index: -1; */
+  /* z-index: 1; */
 }
 
 .adoption-details {
@@ -260,22 +266,31 @@ h4 {
   align-items: center;
 }
 
-.overlay {
+.container {
   border-top-right-radius: 5%;
   border-top-left-radius: 5%;
   position: relative;
-  /* display: none; */
-  /* width: 100%;
-  height: 100%; */
-  background-color: rgba(0, 0, 0, 0.8);
-  z-index: 2;
 }
 
-/* .overlay:hover {
+@media screen and (max-width: 1300px) {
+	h1 {
+		font-size: 2.5em
+	}
 
-} */
+	.sub-title {
+		font-size: 2.25em;
+	}
 
-@media screen and (max-width: 1200px) {
+	.sub-sub-title {
+		font-size: 1.5em;
+	}
+
+	.logo {
+		width: 15%;
+	}
+}
+
+@media screen and (max-width: 1000px) {
   h1 {
     font-size: 2.25em;
   }
@@ -291,11 +306,59 @@ h4 {
   nav {
     display: none;
   }
+
+	header {
+		justify-content: space-evenly;
+		align-items: center;
+	}
+
   .hamburger {
     display: flex;
   }
+
+	.titles {
+		margin-bottom: 0;
+	}
 }
 
-.hidden {
-  display: none;
+@media screen and (max-width: 600px) {
+	.logo {
+		width: 25%;
+	}
+
+	/* header {
+		align-items: center;
+	} */
+}
+
+
+button {
+	cursor: pointer;
+	border-radius: 0;
+}
+
+.about-us:hover {
+	border-bottom: 6px solid white;
+}
+
+.adoptables:hover {
+	border-bottom: 6px solid #fbfd85;
+}
+
+.donate:hover {
+	border-bottom: 6px solid #e0505f;
+}
+
+.adoption-card:hover {
+	cursor: pointer;
+	transition: transform 125ms;
+	transform: translateY(-10px);
+}
+
+.hamburger:hover {
+	background-color: white;
+}
+
+.adoption-card:hover .image-info {
+	background: rgba(0, 0, 0, 0);
 }
