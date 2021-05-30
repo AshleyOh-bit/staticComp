@@ -89,12 +89,18 @@ nav {
   width: 50%;
 }
 
-body {
+/* body { */
   /* height: 100%;
   width: 100%; */
-  display: grid;
-  grid-template-columns: 1fr;
+  /* display: grid;
+  grid-template-columns: 1fr; */
   /* grid-template-rows: repeat(8, 3fr) */
+/* } */
+
+.adoption-section {
+  display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+grid-gap: 20px;
 }
 
 button {
