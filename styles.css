@@ -119,11 +119,11 @@ button {
 
 
 h1 {
-  font-size: 2.5em;
+  font-size: 3em;
 }
 
 h2 {
-  font-size: 2.25em;
+  font-size: 2.75em;
   margin: 1em;
 }
 
@@ -138,7 +138,7 @@ h4 {
 
 .logo {
   /* height: 150px; */
-  width: 15%;
+  width: 12%;
   /* border-radius: 5%; */
 }
 
@@ -152,7 +152,7 @@ h4 {
 }
 
 .sub-sub-title {
-  font-size: 1.5em;
+  font-size: 2em;
   font-style: italic;
   margin-left: .5em;
 }
@@ -272,6 +272,24 @@ h4 {
   position: relative;
 }
 
+@media screen and (max-width: 1300px) {
+	h1 {
+		font-size: 2.5em
+	}
+
+	.sub-title {
+		font-size: 2.25em;
+	}
+
+	.sub-sub-title {
+		font-size: 1.5em;
+	}
+
+	.logo {
+		width: 15%;
+	}
+}
+
 @media screen and (max-width: 1000px) {
   h1 {
     font-size: 2.25em;
@@ -291,6 +309,7 @@ h4 {
 
 	header {
 		justify-content: space-evenly;
+		align-items: center;
 	}
 
   .hamburger {
@@ -300,6 +319,16 @@ h4 {
 	.titles {
 		margin-bottom: 0;
 	}
+}
+
+@media screen and (max-width: 600px) {
+	.logo {
+		width: 25%;
+	}
+
+	/* header {
+		align-items: center;
+	} */
 }
 
 
