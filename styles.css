@@ -312,15 +312,16 @@ h4 {
 
 
 .about-us:hover, .adoptables:hover, .donate:hover, .calendar:hover {
+	cursor: pointer;
 	border-radius: 0;
 }
 
 .about-us:hover {
-		border-bottom: 6px solid white;
+	border-bottom: 6px solid white;
 }
 
 .adoptables:hover {
-		border-bottom: 6px solid #fbfd85;
+	border-bottom: 6px solid #fbfd85;
 }
 
 .donate:hover {
@@ -332,6 +333,7 @@ h4 {
 }
 
 .adoption-card:hover {
+	cursor: pointer;
 	transition: transform 125ms;
 	transform: translateY(-10px);
 }
@@ -340,10 +342,6 @@ h4 {
 	background-color: white;
 }
 
-.container:hover > .image-info{
-		background: rgba(0, 0, 0, 0);
-}
-
-/* .image-info:hover {
+.adoption-card:hover .image-info {
 	background: rgba(0, 0, 0, 0);
-} */
+}
