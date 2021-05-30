@@ -186,6 +186,9 @@ h4 {
   /* box-shadow: 5px 5px 5px 5px #191970; */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border: #191970 solid -2px;
+	/* transition shit below */
+	will-change: transform;
+	transition: transform 450ms;
 }
 
 .icon, .rat-icon {
@@ -328,4 +331,9 @@ h4 {
 
 .calendar:hover {
 	border-bottom: 6px solid #e0505f
+}
+
+.adoption-card:hover {
+	transition: transform 125ms;
+	transform: translateY(-10px);
 }
