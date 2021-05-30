@@ -100,13 +100,13 @@ nav {
 
 .adoption-section {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 20px;
   padding: 3%;
 }
 
 button {
-  height: 50px;
+  height: 75px;
   width: 25%;
   border: 4px solid #e0505f;
   border-radius: 5%;
@@ -129,7 +129,7 @@ h3 {
 }
 
 h4 {
-  font-size: 2.75em;
+  font-size: 2.5em;
   color: 	#3e9d6c;
 }
 
@@ -202,14 +202,17 @@ h4 {
   /* background-color: white; */
   /* position: absolute; */
   /* border-radius: 50%; */
-  height: 4em;
-  width: 4em;
+  height: 75%;
+  width: 20%;
   margin: 1em;
   /* z-index: 2; */
 }
 
 .views {
   /* position: absolute; */
+    font-size: 80%;
+  height: 75%;
+  width: 20%;
   color: white;
   text-shadow:
     -1px -1px 0 #000,
@@ -217,15 +220,19 @@ h4 {
     -1px 1px 0 #000,
     1px 1px 0 #000;
   height: 4em;
-  /* width: 4em; */
+  width: 3em;
   margin-right: .75em;
   margin-top: .75em;
   font-size: 1.75em;
   text-transform: uppercase;
 }
+/*
+.views > p {
+  font-size: 80%;
+} */
 
-.view-num {
-  font-size: 2em;
+.view-num > p {
+  font-size: 100%;
 }
 
 .rat-photo {
@@ -242,8 +249,8 @@ h4 {
 }
 
 .adoption-details > p {
-  font-size: 1.5em;
-  margin: .1em;
+  font-size: 1.15em;
+  margin: .2em;
 }
 
 .num-icon {
