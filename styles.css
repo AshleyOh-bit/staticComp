@@ -294,34 +294,38 @@ h4 {
 
 /* Hover States */
 
-button:hover {
+button:hover, button:focus {
 	border-radius: 0;
 	cursor: pointer;
 }
 
-.about-us:hover {
+.about-us:hover, .about-us:focus {
 	border-bottom: 6px solid white;
 }
 
-.adoptables:hover {
+.adoptables:hover, .adoptables:focus {
 	border-bottom: 6px solid #fbfd85;
 }
 
-.donate:hover {
+.donate:hover, .donate:focus {
 	border-bottom: 6px solid #e0505f;
 }
 
-.hamburger:hover {
+.hamburger:hover, .hamburger:focus {
 	cursor: pointer;
 	background-color: white;
 }
 
-.adoption-card:hover {
+.adoption-card:hover, .adoption-card:focus {
 	cursor: pointer;
 	transition: transform 125ms;
 	transform: translateY(-10px);
 }
 
 .adoption-card:hover .image-info {
+	background: rgba(0, 0, 0, 0);
+}
+
+.adoption-card:focus .image-info {
 	background: rgba(0, 0, 0, 0);
 }
