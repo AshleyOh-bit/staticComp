@@ -2,11 +2,11 @@
 
 ## Abstract
 
-This project was written as a static website to emulate a given comp, and designed to stretch understanding of responsive design and accessibility concerns. I was given creative license to choose my own theme, color palette, icons, and copy. 
+This project was written as a static website to emulate a given comp, and designed to stretch understanding of responsive design and accessibility concerns. I was given creative license to choose my own theme, color palette, icons, and copy.
 
-For my static site, I chose to build out a website for my friend, who owns a rat rescue here in Colorado. As of yet, they do not have a website, and I thought this would be a fun start for them, with the potential to grow the site and implement functionality in the future. The site is fully responsive across multiple screen sizes, and passes WAV accessibility tests. 
+For my static site, I chose to build out a website for my friend, who owns a rat rescue here in Colorado. As of yet, they do not have a website, and I thought this would be a fun start for them, with the potential to grow the site and implement functionality in the future. The site is fully responsive across multiple screen sizes, and passes WAV accessibility tests.
 
-I made and design decisions that deviated from the comp with intentionality, such as providing larger photos of the adoptable rats, so the future user could have a better idea of the critter they were thinking of adopting. 
+I made design decisions that deviated from the comp with intentionality, such as providing larger photos of the adoptable rats, so the future user could have a better idea of the critter they were thinking of adopting. 
 
 ---
 
@@ -49,4 +49,3 @@ I made and design decisions that deviated from the comp with intentionality, suc
 - GitHub pages
 - GitHub as remote host
 - GitHub projects for project management
-
